@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <title>Formulario Desis</title>
+    <meta charset="utf8" />
+  </head>
+  <body>
+    <form action="procesar.php" mothod="get">
+      <h3>FORMULARIO DE VOTACIÓN:</h3>
+
+      <p>
+        Nombre y Apellido
+        <input
+          style="position: relative; left: 65px"
+          type="text"
+          name="nombrecompleto"
+        />
+      </p>
+     
+      <p style="position: relative; bottom: 8px">
+        Alias
+        <input
+          style="position: relative; left: 155px"
+          type="text"
+          name="alias"
+        />
+      </p>
+
+      <p style="position: relative; bottom: 16px">
+        RUT
+        <input style="position: relative; left: 157px" type="text" name="rut" />
+      </p>
+     
+      <p style="position: relative; bottom: 24px">
+        Email
+        <input
+          style="position: relative; left: 151px"
+          type="text"
+          name="email"
+        />
+      </p>
+
+      <p style="position: relative; bottom: 32px">
+        Region
+        <select style="position: relative; left: 142px" name="region">
+          <option value="value1">Value 1</option>
+          <option value="value2" selected>Value 2</option>
+          <option value="value3">Value 3</option>
+        </select>
+      </p>
+
+      <p style="position: relative; bottom: 42px">
+        Comuna
+        <select style="position: relative; left: 134px" name="comuna">
+          <option value="value1">Value 1</option>
+          <option value="value2" selected>Value 2</option>
+          <option value="value3">Value 3</option>
+        </select>
+      </p>
+
+      <p style="position: relative; bottom: 50px">
+        Candidato
+        <select style="position: relative; left: 122px; padding-right: auto;" name="candidato">
+          <option value="value1">Value 1</option>
+          <option value="value2" selected>Value 2</option>
+          <option value="value3">Value 3</option>
+        </select>
+      </p>
+
+      <div id="checkboxes" style="position: relative; bottom: 50px; display: inline-block">
+        Como se entero de nosotros:
+        <label
+          ><input type="checkbox" id="cbox1" value="first_checkbox" />
+          Web</label
+        >
+        <label
+          ><input type="checkbox" id="cbox1" value="first_checkbox" /> TV</label
+        >
+        <label
+          ><input type="checkbox" id="cbox1" value="first_checkbox" /> Redes
+          Sociales</label
+        >
+        <label
+          ><input type="checkbox" id="cbox1" value="first_checkbox" />
+          Amigo</label
+        >
+      </div>
+
+      <p><input style="position: relative; bottom: 50px"  type="submit" value="Votar" /></p>
+    </form>
+  </body>
+</html>
